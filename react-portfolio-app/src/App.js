@@ -5,10 +5,15 @@ import AboutMe from './components/AboutMe';
 import MainWork from './components/MainWork';
 import OtherWork from './components/OtherWork';
 
-import drinkLibraryImg from './assets/images/Drink-Library.jpg';
-import weatherDashboardImg from './assets/images/weather-dashboard.jpg';
+import pokemonBattleImg from './assets/images/Pokemon-Battle.jpg';
+import drinkLibraryImg from './assets/images/Drink-Library2.jpg';
+import weatherDashboardImg from './assets/images/weather.png';
 
 const otherWorks = [
+  {
+    name: 'Pokemon Battler',
+    img: `${pokemonBattleImg}`,
+  },
   {
     name: 'Drink Library',
     img: `${drinkLibraryImg}`,
@@ -27,10 +32,10 @@ export default function App() {
         <Stripe />
         <AboutMe />
         <div className='container d-flex flex-column justify-content-center'>
-          <div className='row justify-content-center'>
+          {/* <div className='row justify-content-center'>
             <MainWork />
-          </div>
-          <div className='row justify-content-center'>
+          </div> */}
+          <div className='row justify-content-center d-grid gap-3'>
             {otherWorks.map((work) => (
               <OtherWork workName={work.name} img={work.img} />
             ))}
