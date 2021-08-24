@@ -6,8 +6,8 @@ export default function AboutMe() {
     UC Berkeley to become a full stack developer.`;
 
   return (
-    <div>
-      <h2> About Me </h2>
+    <div className='container ms-3'>
+      <h2 className=''> About Me </h2>
       <div>{`${intro}`}</div>
     </div>
   );
