@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Stripe from './components/Stripe';
+import AboutMe from './components/AboutMe';
 
 export default function App() {
   return (
@@ -8,8 +9,8 @@ export default function App() {
       <Header />
       <main>
         <Stripe />
-        {/* <AboutMe />
-        <MainWork />
+        <AboutMe />
+        {/* <MainWork />
         {otherWorks.map((work) => (
           <OtherWork work />
         ))} */}
