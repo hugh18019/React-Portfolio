@@ -55,10 +55,6 @@ function getTagsforWork() {
 export default function OtherWork(props) {
   return (
     <div className='container d-flex flex-column justify-content-center'>
-      {/* <div className='row justify-content-center'>
-      <MainWork />
-    </div> */}
-
       <div className='row justify-content-center d-grid gap-3'>
         {getTagsforWork()}
       </div>
