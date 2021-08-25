@@ -1,20 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Works';
 import Contact from './pages/Contact';
 
-export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+// let temp;
+// let count = 5;
 
-  // TODO: Add a comment describing the functionality of this method
+export default function PortfolioContainer(boo) {
+  const [currentPage, setCurrentPage] = useState('About');
+
+  // console.log('count', count);
+
+  // const [firstTimeHome, setFirstTimeHome] = useState(false);
+  // temp = firstTimeHome;
+  // useEffect(() => {
+  //   temp = true;
+  //   count--;
+  // }, []);
+  // console.log('temp', temp);
+  // console.log('firstTimeHome', firstTimeHome);
+
   const renderPage = () => {
-    // if (currentPage === 'Home') {
-    //   return <Home />;
-    // }
     if (currentPage === 'About') {
       return <About />;
+    }
+    if (currentPage === 'Home') {
+      return <Home />;
     }
     if (currentPage === 'Works') {
       return <Work />;

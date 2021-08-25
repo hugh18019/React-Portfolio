@@ -3,7 +3,7 @@ import '../style.css';
 
 import validateEmail from '../../utils/helpers';
 
-function Form() {
+function Contact() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
   const [name, setName] = useState('');
@@ -58,7 +58,7 @@ function Form() {
           </div>
           <div class='mb-3'>
             <label for='inputUserName' class='form-label'>
-              Email address
+              Name
             </label>
             <input
               value={name}
@@ -97,4 +97,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default Contact;

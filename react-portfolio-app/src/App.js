@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PortfolioContainer from './components/PortfolioContainer';
 
-const App = () => <PortfolioContainer />;
+function App() {
+  console.log('Got to App');
+
+  return (
+    <PortfolioContainer
+
+    //   visitHomeCount={visitHomeCount}
+    //   setVisitHomeCount={setVisitHomeCount}
+    />
+  );
+}
 
 export default App;
 
