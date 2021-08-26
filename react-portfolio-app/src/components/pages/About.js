@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutMe({ firstTimeHome, setFirstTimeHome }) {
+export default function AboutMe() {
   console.log('got here');
   const intro = `My name is Huiran Lin. I'm a CS major at Sonoma State University. I've
     mostly worked with C++. I'm currently attending the coding bootcamp at

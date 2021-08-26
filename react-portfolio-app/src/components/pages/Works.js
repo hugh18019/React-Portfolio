@@ -10,18 +10,22 @@ const Works = [
   {
     name: 'Pokemon Battler',
     img: `${pokemonBattleImg}`,
+    deployed: 'https://pokebattlerproject.herokuapp.com',
   },
   {
     name: 'Drink Library',
     img: `${drinkLibraryImg}`,
+    deployed: 'https://hugh18019.github.io/Drinks-Library/',
   },
   {
     name: 'Weather Dashboard',
     img: `${weatherDashboardImg}`,
+    deployed: 'https://hugh18019.github.io/Weather-Dashboard/',
   },
   {
     name: 'Workday Scheduler',
     img: `${workdaySchedulerImg}`,
+    deployed: 'https://hugh18019.github.io/Work-Day-Scheduler/',
   },
 ];
 
@@ -35,14 +39,16 @@ function getTagsforWork() {
         className='p-2 float-start head-text justify-content-center'
         style={{ width: '35%', height: '80%' }}
       >
-        <img
-          src={Works[i].img}
-          className='rounded img-fluid'
-          alt='otherwork cap'
-          style={{ width: '100%' }}
-        />
-        <div className='text-on-image justify-content-center'>
-          <h3>text</h3>
+        <a href={Works[i].deployed}>
+          <img
+            src={Works[i].img}
+            className='rounded img-fluid'
+            alt='otherwork cap'
+            style={{ width: '100%' }}
+          />
+        </a>
+        <div>
+          <p>{Works[i].name}</p>
         </div>
       </div>
     );

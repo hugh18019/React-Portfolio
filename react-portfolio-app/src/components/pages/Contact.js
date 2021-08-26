@@ -29,13 +29,14 @@ function Contact() {
     e.preventDefault();
 
     if (!validateEmail(email) || !name || !message) {
-      setErrorMessage('Email, name, or message is invalid');
+      alert('Email, name, or message is invalid');
       return;
     }
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
     setEmail('');
     setMessage('');
+    alert('Message Sent!');
   };
 
   return (
@@ -53,7 +54,6 @@ function Contact() {
               type='email'
               class='form-control'
               id='inputEmail'
-              aria-describedby='emailHelp'
             />
           </div>
           <div class='mb-3'>
@@ -71,7 +71,7 @@ function Contact() {
           </div>
           <div class='mb-3'>
             <label for='inputMessage' class='form-label'>
-              Password
+              Message
             </label>
             <input
               value={message}
@@ -82,7 +82,11 @@ function Contact() {
               id='inputMessage'
             />
           </div>
-          <button type='submit' class='btn btn-primary'>
+          <button
+            type='submit'
+            class='btn btn-primary'
+            onClick={handleFormSubmit}
+          >
             Submit
           </button>
         </form>

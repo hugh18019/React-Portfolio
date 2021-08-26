@@ -10,6 +10,16 @@ import Contact from './pages/Contact';
 
 export default function PortfolioContainer(boo) {
   const [currentPage, setCurrentPage] = useState('About');
+  // const [a, setA] = useState(1);
+  // useEffect(() => {
+  //   setA(2);
+  // }, []);
+
+  // useEffect(() => {
+  //   setCurrentPage('About');
+  // }, []);
+
+  // console.log(currentPage);
 
   // console.log('count', count);
 
